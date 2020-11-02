@@ -1,0 +1,95 @@
+//--=Variables: color=--//
+
+@text: #000000;
+@body: #ffffff;
+
+
+//--=Variables: width=--//
+
+@tablet: 768px;
+@desktop: 1150px;
+
+//--=Variables: resolutions=--//
+
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+//--=Mixins=--//
+
+.button-clean() {
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.font-set(@f-size, @l-height) {
+  font-size: @f-size;
+  line-height: @l-height;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+//--=Base global styles=--//
+
+body {
+  margin: 0;
+  padding: 0;
+  .font-set(16px, 24px);
+  background-color: @body;
+  color:@text;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//--=Help classes=--//
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
