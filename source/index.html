@@ -40,174 +40,190 @@
     </header>
     <article class="promo">
       <h1 class="visually-hidden">Научно-производственное предприятие "Контех"</h1>
-      <p class="promo__tagline">Технологии конфиденциальности</p>
-      <a href="#" class="promo__link">
+      <div class="promo__tagline-wrapper">
+        <p class="promo__tagline">Технологии конфиденциальности</p>
+      </div>
+      <a href="#main_content" class="promo__link">
         <svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M18.6071 16.2603L10.1295 24.7379L1.65191 16.2603" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10.1295 24.4783V1.52173" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span class="visually-hidden">Далее</span>
       </a>
-      <!-- <div class="promo__bg">
+      <div class="promo__bg">
         <div class="promo__overlay"></div>
         <video loop="loop" loop="loop" preload="auto" autoplay muted>
-          <source src="video/video.mp4" type="video/mp4" />
+          <source src="video/circuit768.mp4" type="video/mp4" />
         </video>
-      </div> -->
+      </div>
     </article>
-    <main>
-      <section class="development">
-        <h2 class="development__title title">Деятельность</h2>
-        <p class="development__text text">Квалификация и опыт сотрудников ООО НПП «Контех» позволяют создавать современные программные средства (системы управления базами данных, офисные средства, средства защиты информации, средства ведения делопроизводства), эффективно работающие на ЭВМ разной производительности, а также на различных мобильных платформах.</p>
-        <ul class="development__list">
-          <li class="development__item">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/icon__linux--medium.png"> -->
-              <img src="img/icon__linux--small.png" alt="иконка Linux">
-            </picture>
-            <p class="development__description">Разработка заказной сборки дистрибутивов заданной конфигурации на базе ОС Linux</p>
-          </li>
-          <li class="development__item">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/icon__driver--medium.png"> -->
-              <img src="img/icon__driver--small.png" alt="иконка разработки драйверов">
-            </picture>
-            <p class="development__description">Разработка драйверов устройств</p>
-          </li>
-          <li class="development__item">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/icon__kernel--medium.png"> -->
-              <img src="img/icon__kernel--small.png" alt="иконка разработки ядра ОС">
-            </picture>
-            <p class="development__description">Доработка ядра ОС с внедрением пользовательского функционала</p>
-          </li>
-        </ul>
+    <main id="main_content">
+      <section class="development" id="development">
+        <div class="container">
+          <h2 class="development__title title">Деятельность</h2>
+          <p class="development__text text">Квалификация и опыт сотрудников ООО НПП «Контех» позволяют создавать современные программные средства (системы управления базами данных, офисные средства, средства защиты информации, средства ведения делопроизводства), эффективно работающие на ЭВМ разной производительности, а также на различных мобильных платформах.</p>
+          <ul class="development__list">
+            <li class="development__item">
+              <picture>
+                <!-- <source media="(min-width: 768px)" srcset="img/icon__linux--large.png"> -->
+                <img src="img/icon__linux--small.png" alt="иконка Linux">
+              </picture>
+              <p class="development__description">Разработка заказной сборки дистрибутивов заданной конфигурации на базе ОС Linux</p>
+            </li>
+            <li class="development__item">
+              <picture>
+                <!-- <source media="(min-width: 768px)" srcset="img/icon__driver--large.png"> -->
+                <img src="img/icon__driver--small.png" alt="иконка разработки драйверов">
+              </picture>
+              <p class="development__description">Разработка драйверов устройств</p>
+            </li>
+            <li class="development__item">
+              <picture>
+                <!-- <source media="(min-width: 768px)" srcset="img/icon__kernel--large.png"> -->
+                <img src="img/icon__kernel--small.png" alt="иконка разработки ядра ОС">
+              </picture>
+              <p class="development__description">Доработка ядра ОС с внедрением пользовательского функционала</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="documents">
-        <h2 class="documents__title title">Документы</h2>
-        <h3 class="documents__title--h3">Лицензии</h3>
-        <p class="documents__text text">Наше предприятие является лицензиатом ФСБ по проектированию, разработке, производству и проведению технического обслуживания средств защиты информации.
-        </p>
-        <ul class="documents__licenses">
-          <li class="documents__license">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/license__1--medium.jpg"> -->
-              <img src="img/license__1--small.jpg" alt="Лицензия">
-            </picture>
-          </li>
-          <li class="documents__license">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/license__2--medium.jpg"> -->
-              <img src="img/license__2--small.jpg" alt="Лицензия">
-            </picture>
-          </li>
-          <li class="documents__license">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/license__3--medium.jpg"> -->
-              <img src="img/license__3--small.jpg" alt="Лицензия">
-            </picture>
-          </li>
-        </ul>
-        <div class="prev-next-btns">
-          <div class="prev-btn"></div>
-          <div class="next-btn"></div>
+        <div class="container">
+          <h2 class="documents__title title">Документы</h2>
+          <h3 class="documents__title-h3">Лицензии</h3>
+          <p class="documents__text text">Наше предприятие является лицензиатом ФСБ по проектированию, разработке, производству и проведению технического обслуживания средств защиты информации.
+          </p>
+          <div class="documents__slider slider">
+            <ul class="documents__licenses slider__list">
+              <li class="documents__license slider__item">
+                <a href="img/license__1--orig.jpg" class="fancybox" data-fancybox="license">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/license__1--medium.jpg"> -->
+                    <img src="img/license__1--small.jpg" alt="Лицензия">
+                  </picture>
+                </a>
+              </li>
+              <li class="documents__license slider__item">
+                <a href="img/license__2--orig.jpg" class="fancybox" data-fancybox="license">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/license__1--medium.jpg"> -->
+                    <img src="img/license__2--small.jpg" alt="Лицензия">
+                  </picture>
+                </a>
+              </li>
+              <li class="documents__license slider__item">
+                <a href="img/license__3--orig.jpg" class="fancybox" data-fancybox="license">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/license__1--medium.jpg"> -->
+                    <img src="img/license__3--small.jpg" alt="Лицензия">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 class="documents__title-h3">Сертификат</h3>
+          <p class="documents__text text">Система менеджмента качества ООО НПП «Контех» применительно к осуществлению научно-исследовательских и опытно-конструкторских работ, производству, ремонту, техническому обслуживанию изготавливаемых изделий и программного обеспечения сертифицирована в Системе добровольной сертификации «РОСТЕХ» и соответствует требованиям ГОСТ Р ИСО 9001-2015 и дополнительным требованиям ГОСТ РВ 0015-002-2012, что подтверждено Сертификатом соответствия, выданным ООО НПП «Контех» № РС.1.160-2019 от 31.12.2019 г.</p>
+          <ul class="documents__certificates">
+            <li class="documents__certificate">
+              <a href="img/certificate__1--orig.jpg" class="fancybox" data-fancybox="certificates">
+                <picture>
+                  <!-- <source media="(min-width: 768px)" srcset="img/license__1--medium.jpg"> -->
+                  <img src="img/certificate__1--small.jpg" alt="Сертификат СМК">
+                </picture>
+              </a>
+            </li>
+          </ul>
         </div>
-        <h3 class="documents__title--h3">Сертификат</h3>
-        <p class="documents__text text">Система менеджмента качества ООО НПП «Контех» применительно к осуществлению научно-исследовательских и опытно-конструкторских работ, производству, ремонту, техническому обслуживанию изготавливаемых изделий и программного обеспечения сертифицирована в Системе добровольной сертификации «РОСТЕХ» и соответствует требованиям ГОСТ Р ИСО 9001-2015 и дополнительным требованиям ГОСТ РВ 0015-002-2012, что подтверждено Сертификатом соответствия, выданным ООО НПП «Контех» № РС.1.160-2019 от 31.12.2019 г.</p>
-        <ul class="documents__certificates">
-          <li class="documents__certificate">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/certificate--medium.jpg"> -->
-              <img src="img/certificate--small.jpg" alt="Сертификат СМК">
-            </picture>
-          </li>
-        </ul>
       </section>
       <section class="partners">
-        <h2 class="partners__title title">Наши партнеры</h2>
-        <ul class="partners__list">
-          <li class="partners__item">
-            <a href="#" class="partners__link">
-              <picture>
-                <!-- <source media="(min-width: 768px)" srcset="img/icon__pniei--medium.png"> -->
-                <img src="img/icon__pniei--small.png" alt="лого ПНИЭИ">
-              </picture>
-            </a>
-            <span class="visually-hidden">АО "ПНИЭИ"</span>
-          </li>
-          <li class="partners__item">
-            <a href="#" class="partners__link">
-              <picture>
-                <!-- <source media="(min-width: 768px)" srcset="img/icon__argus--medium.png"> -->
-                <img src="img/icon__argus--small.png" alt="лого Аргус">
-              </picture>
-            </a>
-            <span class="visually-hidden">Филиал "Аргус" АО "ПНИЭИ"</span>
-          </li>
-          <li class="partners__item">
-            <a href="#" class="partners__link">
-              <picture>
-                <!-- <source media="(min-width: 768px)" srcset="img/icon__atlas--medium.png"> -->
-                <img src="img/icon__atlas--small.png" alt="лого Атлас">
-              </picture>
-            </a>
-            <span class="visually-hidden">ФГУП НТЦ "Атлас"</span>
-          </li>
-          <li class="partners__item">
-            <a href="#" class="partners__link">
-              <picture>
-                <!-- <source media="(min-width: 768px)" srcset="img/icon__vniins--medium.png"> -->
-                <img src="img/icon__vniins--small.png" alt="лого ВНИИНС">
-              </picture>
-            </a>
-            <span class="visually-hidden">АО "Концерн ВНИИНС" </span>
-          </li>
-          <li class="partners__item">
-            <a href="#" class="partners__link">
-              <picture>
-                <!-- <source media="(min-width: 768px)" srcset="img/icon__ncpr--medium.png"> -->
-                <img src="img/icon__ncpr--small.png" alt="лого НЦПР">
-              </picture>
-            </a>
-            <span class="visually-hidden">ООО "НЦПР"</span>
-          </li>
-        </ul>
-        <div class="prev-next-btns">
-          <div class="prev-btn"></div>
-          <div class="next-btn"></div>
+        <div class="container">
+          <h2 class="partners__title title">Наши партнеры</h2>
+          <div class="partners__slider slider">
+            <ul class="partners__list slider__list">
+              <li class="partners__item slider__item">
+                <a href="#" class="partners__link">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/icon__pniei--medium.png"> -->
+                    <img src="img/icon__pniei--orig.png" alt="лого ПНИЭИ">
+                  </picture>
+                </a>
+                <span class="visually-hidden">АО "ПНИЭИ"</span>
+              </li>
+              <li class="partners__item slider__item">
+                <a href="#" class="partners__link">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/icon__argus--medium.png"> -->
+                    <img src="img/icon__argus--orig.png" alt="лого Аргус">
+                  </picture>
+                </a>
+                <span class="visually-hidden">Филиал "Аргус" АО "ПНИЭИ"</span>
+              </li>
+              <li class="partners__item slider__item">
+                <a href="#" class="partners__link">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/icon__atlas--medium.png"> -->
+                    <img src="img/icon__atlas--orig.png" alt="лого Атлас">
+                  </picture>
+                </a>
+                <span class="visually-hidden">ФГУП НТЦ "Атлас"</span>
+              </li>
+              <li class="partners__item slider__item">
+                <a href="#" class="partners__link">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/icon__vniins--medium.png"> -->
+                    <img src="img/icon__vniins--orig.png" alt="лого ВНИИНС">
+                  </picture>
+                </a>
+                <span class="visually-hidden">АО "Концерн ВНИИНС" </span>
+              </li>
+              <li class="partners__item slider__item">
+                <a href="#" class="partners__link">
+                  <picture>
+                    <!-- <source media="(min-width: 768px)" srcset="img/icon__ncpr--medium.png"> -->
+                    <img src="img/icon__ncpr--orig.png" alt="лого НЦПР">
+                  </picture>
+                </a>
+                <span class="visually-hidden">ООО "НЦПР"</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="about">
-        <h2 class="about__title title">О нас</h2>
-        <p class="about__text text">Компания ООО НПП «Контех» была основана в 1992 году как предприятие по разработке средств и оказанию услуг защиты информации. В настоящее время наше предприятие занимает прочное положение среди компаний разработчиков программных средств криптографической защиты и систем обработки информации специального и общего назначения, разработке и сопровождению программного обеспечения для мобильных устройств общего пользования.</p>
-        <p class="about__text text">Участвуя в НИОКР по разработке средств и систем защиты информации в интересах силовых ведомств и органов государственной власти, предприятие специализируется на решениях, основанных на мощи и гибкости Linux платформы и программном обеспечении с открытым исходном кодом. Стабильное положение на рынке, высокая квалификация сотрудников и накопленный опыт позволяют расширять рамки наших разработок и инвестировать средства в проекты «гражданского» применения.</p>
-        <p class="about__text text">В соответствии со Стратегией развития ООО НПП «Контех» приоритетной целью является разработка, производство и гарантийное обслуживание продукции, удовлетворяющей самым высоким требованиям и ожиданиям потребителей.</p>
+        <div class="container">
+          <h2 class="about__title title">О нас</h2>
+          <p class="about__text text">Компания ООО НПП «Контех» была основана в 1992 году как предприятие по разработке средств и оказанию услуг защиты информации. В настоящее время наше предприятие занимает прочное положение среди компаний разработчиков программных средств криптографической защиты и систем обработки информации специального и общего назначения, разработке и сопровождению программного обеспечения для мобильных устройств общего пользования.</p>
+          <p class="about__text text">Участвуя в НИОКР по разработке средств и систем защиты информации в интересах силовых ведомств и органов государственной власти, предприятие специализируется на решениях, основанных на мощи и гибкости Linux платформы и программном обеспечении с открытым исходном кодом. Стабильное положение на рынке, высокая квалификация сотрудников и накопленный опыт позволяют расширять рамки наших разработок и инвестировать средства в проекты «гражданского» применения.</p>
+          <p class="about__text text">В соответствии со Стратегией развития ООО НПП «Контех» приоритетной целью является разработка, производство и гарантийное обслуживание продукции, удовлетворяющей самым высоким требованиям и ожиданиям потребителей.</p>
+        </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__title--h3">Адрес:</h3>
-            <p>440026, г. Пенза,<br>ул. Советская 9</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title--h3">Телефон:</h3>
-            <a href="tel:88412563960">8 (8412) 56-39-60</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title--h3">Email:</h3>
-            <a href="mailto:npp.konteh@gmail.com">npp.konteh@gmail.com</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="contacts__title title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--adress">
+              <h3 class="contacts__title--h3">Адрес:</h3>
+              <p>440026, г. Пенза,<br>ул. Советская 9</p>
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <h3 class="contacts__title--h3">Телефон:</h3>
+              <a href="tel:88412563960">8 (8412) 56-39-60</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <h3 class="contacts__title--h3">Email:</h3>
+              <a href="mailto:npp.konteh@gmail.com">npp.konteh@gmail.com</a>
+            </li>
+          </ul>
+        </div>
         <!-- <iframe src="" width="" height=""></iframe> -->
         <picture>
           <!-- <source media="(min-width: 768px)" srcset="img/map--medium.jpg"> -->
-          <img src="img/map--small.jpg" alt="Карта">
+          <img class="contacts__map" src="img/map.png" alt="Карта">
         </picture>
       </section>
     </main>
-    <footer class="footer">
-      <h2 class="footer__title"></h2>
+    <footer class="footer container">
+      <h2 class="footer__title">Дополнительная информация</h2>
       <ul class="footer__links">
         <li class="footer__link">Вакансии</li>
         <li class="footer__link">Регистрационная карточка предприятия</li>
@@ -219,5 +235,9 @@
       <p class="footer__copyright">© ООО НПП "КонТех" 2020 </p>
       <p class="footer__copyright">© Разработка сайта: <a href="http://web-pnz.ru">web-pnz.ru</a></p>
     </footer>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/fancybox.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/itemslide.min.js"></script>
   </body>
 </html>

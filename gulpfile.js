@@ -67,6 +67,11 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/**")
+  .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("sync", function(done) {
   browserSync.init({
     server: "build/",
@@ -76,6 +81,7 @@ gulp.task("sync", function(done) {
     ui: false
   });
   browserSync.watch("source/*.html", gulp.series("html")).on("change", browserSync.reload);
+  browserSync.watch("source/js/**", gulp.series("js")).on("change", browserSync.reload);
   done();
 });
 

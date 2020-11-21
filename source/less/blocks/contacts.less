@@ -1,0 +1,44 @@
+.contacts {
+  background-color: @alt-bg;
+  text-align: center;
+}
+
+.contacts__item {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 50px;
+  & h3, & p, & a {
+    .font-set(12px, 18px);
+    font-weight: 400;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -25px;
+
+    width: 50px;
+    height: 50px;
+
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+  }
+}
+
+.contacts__item--adress::before {
+  background-image: url("../img/icon__pin.png");
+}
+
+.contacts__item--phone::before {
+  background-image: url("../img/icon__phone.png");
+}
+
+.contacts__item--email::before {
+  background-image: url("../img/icon__email.png");
+}
+
+.contacts__map {
+  padding-bottom: 35px;
+}

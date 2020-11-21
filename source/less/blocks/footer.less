@@ -1,0 +1,37 @@
+.footer__title {
+  position: relative;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  .font-set(14px, 20px);
+  font-weight: 700;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: @orange;
+    background-image: @separator;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.footer__link {
+  margin-top: 10px;
+  .font-set(10px, 16px);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.footer__logo-link {
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.footer__copyright {
+  margin-bottom: 15px;
+  .font-set(10px, 16px);
+  text-transform: uppercase;
+  text-align: center;
+}
