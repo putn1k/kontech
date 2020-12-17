@@ -1,10 +1,13 @@
 .development {
   background-color: @alt-bg;
-  text-align: center;
 }
 
 .development__text {
   margin-top: 20px;
+}
+
+.development__list {
+  text-align: center;
 }
 
 .development__item picture {
@@ -25,4 +28,28 @@
   max-width: 288px;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+@media (min-width: @tablet) {
+  .development__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop) {
+  .development__text {
+    max-width: 405px;
+    margin-right: 20px;
+    float: left;
+  }
+  .development__list {
+    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  .development__item picture {
+    width: 180px;
+    height: 180px
+  }
 }

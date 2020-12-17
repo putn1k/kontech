@@ -3,7 +3,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .about__title {
@@ -13,4 +12,27 @@
 .about__text {
   text-align: justify;
   margin-top: 5px;
+}
+
+.about__photo {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .about__photo {
+    display: inline;
+    max-width: 360px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .about {
+    background-attachment: fixed;
+  }
+  .about__photo {
+    max-width: none;
+  }
 }

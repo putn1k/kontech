@@ -15,8 +15,7 @@
 //--=Variables: width=--//
 
 @tablet: 768px;
-@desktop: 1024px;
-@desktop_large: 1416px;
+@desktop: 1280px;
 
 //--=Mixins=--//
 
@@ -77,10 +76,14 @@ img {
 }
 
 //--=Help classes=--//
-
 .container {
   padding: 35px 16px;
+  max-width: 735px;
   margin: 0 auto;
+}
+
+.title-wrapper {
+  text-align: center;
 }
 
 .title {
@@ -91,7 +94,6 @@ img {
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  text-align: center;
   &::before {
     content: '';
     position: absolute;
@@ -107,6 +109,7 @@ img {
 
 .text {
   .font-set(14px, 20px);
+  text-align: center;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -125,9 +128,54 @@ input[type="checkbox"].visually-hidden {
 }
 
 @media (min-width: @tablet) {
-  // .container {
-  //   max-width: 960px;
-  //   padding: 0 32px;
-  //   margin: 0 auto;
-  // }
+  .container {
+    padding: 35px 32px;
+    max-width: none;
+    width: 704px;
+  }
+
+  .title-wrapper {
+    text-align: right;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 48px;
+    display: inline-block;
+    &::before {
+      left: 0;
+      margin-left: 0;
+    }
+  }
+
+  .text {
+    text-align: justify;
+    text-indent: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .container {
+    width: 1152px;
+    padding: 80px 64px;
+  }
+  .title-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 1;
+    &::before {
+      width: 60px;
+      height: 5px;
+      bottom: -5px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
 }

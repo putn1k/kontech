@@ -6,3 +6,30 @@
   margin-top: 20px;
   height: 360px;
 }
+
+@media (min-width: @tablet) {
+  .partners__slider {
+    height: auto;
+  }
+
+  .partners__list {
+    display: flex;
+  }
+  .partners__item:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .partners__link {
+    display: inline-block;
+    filter: grayscale(1);
+    transition-property: filter, transform;
+    transition: .3s cubic-bezier(.4,0,.2,1);
+    &:hover,
+    &:focus {
+      transform:translateY(-20px);
+      filter: grayscale(0);
+    }
+  }
+}
