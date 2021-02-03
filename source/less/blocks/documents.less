@@ -21,22 +21,14 @@
   text-align: center;
 }
 
-.documents__slider {
-  min-height: 360px;
+.documents__licenses {
+  text-align: center;
 }
 
 @media (min-width: @tablet) {
-  .documents__licenses {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .documents__license:not(:last-child) {
-    margin-right: 10px;
-  }
-
   .documents__title-h3 {
     text-align: left;
+    text-indent: 30px;
   }
 
   .documents__certificates-wrapper {
@@ -56,21 +48,23 @@
   .documents {
     background-attachment: fixed;
   }
+
   .documents__title-h3 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 20px;
   }
+
   .documents__licenses {
     padding-left: 20px;
     justify-content: flex-end;
-    margin-top: -50px;
-
   }
+
   .documents__text--licenses {
     float: left;
     width: 435px;
   }
+
   .documents__certificates-wrapper {
     .documents__title-h3 {
       margin-left: 322px;
@@ -84,6 +78,5 @@
   }
   .documents__certificates {
     justify-content: flex-start;
-    margin-top: -50px;
   }
 }

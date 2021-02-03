@@ -132,6 +132,34 @@ input[type="checkbox"].visually-hidden {
   overflow: hidden;
 }
 
+.scroll-up {
+	position: fixed;
+	display: none;
+	z-index: 1000;
+	bottom: 30px;
+	right: 1em;
+}
+
+.scroll-up svg {
+  transform: rotate(180deg);
+}
+
+.scroll-up a {
+	background-color: rgba(135, 135, 135, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  transition: background-color .4s;
+}
+
+.scroll-up a:hover,
+.scroll-up a:focus {
+	background-color: rgba(235, 235, 235, .8);
+}
+
 @media (min-width: @tablet) {
   .container {
     padding: 35px 32px;
@@ -182,5 +210,11 @@ input[type="checkbox"].visually-hidden {
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .scroll-up {
+    right: 6%;
   }
 }

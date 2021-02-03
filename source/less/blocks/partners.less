@@ -4,17 +4,24 @@
 
 .partners__slider {
   margin-top: 20px;
-  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.partners__list {
+  text-align: center;
 }
 
 @media (min-width: @tablet) {
-  .partners__slider {
-    height: auto;
-  }
-
   .partners__list {
     display: flex;
   }
+
   .partners__item:not(:last-child) {
     margin-right: 5px;
   }
