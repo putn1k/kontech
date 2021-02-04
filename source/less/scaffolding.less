@@ -145,19 +145,26 @@ input[type="checkbox"].visually-hidden {
 }
 
 .scroll-up a {
-	background-color: rgba(135, 135, 135, 0.5);
+	background-color: rgba(135, 135, 135, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
 	width: 35px;
   height: 35px;
   border-radius: 4px;
-  transition: background-color .4s;
+  transition: background-color .4s ease-in-out;
+}
+
+.scroll-up path {
+  transition: fill .4s ease-in-out;
 }
 
 .scroll-up a:hover,
 .scroll-up a:focus {
-	background-color: rgba(235, 235, 235, .8);
+  background-color: rgba(235, 235, 235, .5);
+  & path {
+    fill: @orange;
+  }
 }
 
 @media (min-width: @tablet) {
